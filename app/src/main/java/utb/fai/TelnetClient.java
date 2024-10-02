@@ -74,6 +74,7 @@ public class TelnetClient {
             try {
                 if (socket != null && !socket.isClosed()) {
                     socket.close();
+                    System.out.println("closed");
                 }
             } catch (IOException e) {
                 e.printStackTrace();
